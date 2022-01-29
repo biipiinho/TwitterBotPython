@@ -86,5 +86,5 @@ def write_lyrics_to_file(artist_name, song_count):
 artists=['Bartika eam Rai', 'Narayan Gopal', 'Jerusha Rai', 'Ankit Shrestha', 'Simma Rai']
 
 for artist in artists:
-    write_lyrics_to_file(artist, 1)
+    write_lyrics_to_file(artist, 5)
 #
