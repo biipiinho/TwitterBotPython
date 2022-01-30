@@ -72,7 +72,7 @@ def scrape_song_lyrics(url):
 # for url in x:
 #     scrape_song_lyrics(url)
 def write_lyrics_to_file(artist_name, song_count):
-    f = open('lyrics/' + 'lyrics' + '.txt', 'ab')
+    f = open('lyrics' + '.txt', 'ab')
     urls = request_song_url(artist_name, song_count)
     for url in urls:
         lyrics = scrape_song_lyrics(url)
@@ -82,9 +82,4 @@ def write_lyrics_to_file(artist_name, song_count):
    # print('Wrote {} lines to file from {} songs'.format(num_lines, song_count))
 
 # DEMO
-
-artists=['Bartika eam Rai', 'Narayan Gopal', 'Jerusha Rai', 'Ankit Shrestha', 'Simma Rai']
-
-for artist in artists:
-    write_lyrics_to_file(artist, 5)
-#
+write_lyrics_to_file('Bartika Eam Rai', 10)
